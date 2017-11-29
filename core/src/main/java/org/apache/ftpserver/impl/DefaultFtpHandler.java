@@ -154,7 +154,7 @@ public class DefaultFtpHandler implements FtpHandler {
                             writeToClosedSessionException.getRequest());
             session.close(false).awaitUninterruptibly(10000);
         } else {
-            LOG.error("Exception caught, closing session", cause);
+            //LOG.error("Exception caught, closing session", cause);
             session.close(false).awaitUninterruptibly(10000);
         }
 

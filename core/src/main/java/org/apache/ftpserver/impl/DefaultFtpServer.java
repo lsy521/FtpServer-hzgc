@@ -87,6 +87,7 @@ public class DefaultFtpServer implements FtpServer {
             started = true;
 
             LOG.info("FTP server started");
+            LOG.warn("FTP server started");
         } catch(Exception e) {
             // must close listeners that we were able to start
             for(Listener listener : startedListeners) {
